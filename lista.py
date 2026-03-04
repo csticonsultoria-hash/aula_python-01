@@ -1,5 +1,9 @@
-professor = ("Fredy", 22, "Analista de Sistemas")
 
-nome, idade, cargo = professor
+tupla1 = ("Fredy", "Gilberto","Manoel", "Neymar", "Diego","Fredy")
+tupla2 = (1,2,3,4,5,6)
 
-print(f"{nome} tem {idade} anos e trabalha de {cargo}.")
+tupla3 = tupla1 + tupla2
+
+
+print(tupla3)
+
