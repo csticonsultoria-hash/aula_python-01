@@ -1,10 +1,21 @@
-#CRIAÇÃO DO DIDIONÁRIO
-aluno = {}
+#CRIAÇÃO DO DICIONÁRIO
+estadio = {}
+
 #ENTRADA DE DADOS
-aluno["Nome"] = input("Digite o nome do aluno: ")
-aluno["Curso"] = input("Digite o curso do aluno: ")
-aluno["Nota"] = float(input("Digite a nota do aluno: "))
+for i in range(5):
+   nome_material = input("Digite o nom edo material de contrução: ") #chave
+   valor = input("Informe o valor unitário:") #valor 
+   
+   estadio[nome_material] = valor
+   
 #SAÍDA DE DADOS
-print(f"O nome do aluno é: {aluno["Nome"]}")
-print(f"O curso do aluno é: {aluno["Curso"]}")
-print("Aprovado" if aluno["Nota"] >= 18 else "Reprovado")
+print("---Lista de Materiais de Construção---")
+for estadio[nome_material], valor in estadio.items():
+        print(f"{estadio[nome_material]} | {valor}")
+
+
+
+#SAÍDA DE DADOS
+#print(f"O nome do aluno é: {aluno["Nome"]}")
+#print(f"O curso do aluno é: {aluno["Curso"]}")
+#print("Aprovado" if aluno["Nota"] >= 18 else "Reprovado")
